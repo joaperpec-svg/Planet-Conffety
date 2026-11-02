@@ -3,7 +3,7 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-
+import PlanetScene from './components/PlanetScene'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,7 +31,7 @@ function App() {
         </button>
       </section>
 
-      <div className="ticks"></div>
+      <PlanetScene />
 
       <section id="next-steps">
         <div id="docs">
@@ -114,7 +114,7 @@ function App() {
         </div>
       </section>
 
-      <div className="ticks"></div>
+      <PlanetScene />
       <section id="spacer"></section>
     </>
   )
