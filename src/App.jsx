@@ -1,3 +1,4 @@
+import { useState } from 'react' // <-- ¡Asegúrate de incluir esto!
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
