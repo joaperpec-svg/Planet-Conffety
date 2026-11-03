@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      {count > 0 && <Confetti />}
+      <Confetti recycle={false} />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
