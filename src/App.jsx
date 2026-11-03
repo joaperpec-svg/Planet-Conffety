@@ -2,6 +2,7 @@ import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
+import confetti from 'canvas-confetti'
 import './App.css'
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button 
+        <button
   onClick={() => {
     confetti({
       particleCount: 150,
