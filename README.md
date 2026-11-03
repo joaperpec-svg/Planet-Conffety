@@ -1,16 +1,49 @@
-# React + Vite
+# Actividad NPM – React, componentes y Git
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+En esta actividad he trabajado con NPM, React, Vite y Git, creando diferentes componentes y organizando el desarrollo mediante ramas independientes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El objetivo ha sido probar distintas dependencias, incorporar una escena 3D y aprender a gestionar los cambios mediante merges.
 
-## React Compiler
+## 1. React Confetti
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+He instalado la dependencia `react-confetti` y he añadido un componente de confeti a la aplicación.
 
-## Expanding the ESLint configuration
+![Captura React Confetti](/capturas/react-confetty.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 2. Canvas Confetti
+
+He instalado `canvas-confetti` y he creado un botón que permite lanzar partículas de confeti al pulsarlo.
+
+![Captura Canvas Confetti](/capturas/canvas-confety.png)
+
+## 3. Escena 3D con Three.js
+
+He incorporado una escena 3D utilizando Three.js y he separado su código en el componente `PlanetScene.jsx`. El modelo y sus animaciones se encuentran en la carpeta `public`.
+
+![Captura escena 3D](/capturas/planet.png)
+
+## 4. Gestión de dependencias y Git
+
+He creado tres ramas para trabajar de forma independiente:
+
+- `react-confetti`
+- `canvas-confetti`
+- `three`
+
+Posteriormente, he seleccionado el componente de confeti que quería conservar, lo he fusionado con `main` y he eliminado la dependencia descartada. Finalmente, he incorporado la escena 3D a la rama principal.
+
+## 5. Pregunta: Si la carpeta node_modules/ está excluida, ¿borrar una dependencia hace alguna acción sobre el repositorio? ¿Cuál?
+
+Sí. Aunque la carpeta `node_modules/` está excluida del repositorio mediante `.gitignore`, al desinstalar una dependencia con `npm uninstall` se modifican los archivos `package.json` y `package-lock.json`.
+
+Estos archivos sí están incluidos en Git, por lo que sus modificaciones aparecen en `git status` y se pueden guardar mediante un commit.
+
+Por tanto, no se suben los archivos de la dependencia que estaban dentro de `node_modules/`, pero sí se registra en el repositorio que esa dependencia ha sido eliminada del proyecto.
+
+## 6. Despliegue
+
+Enlace a la página web desplegada:
+
+https://joaperpec-svg.github.io/Planet-Conffety-WEB/
