@@ -45,5 +45,3 @@ Por tanto, no se suben los archivos de la dependencia que estaban dentro de `nod
 ## 6. Despliegue
 
 Enlace a la página web desplegada:
-
-**Pendiente de completar en el punto 10.**
