@@ -10,7 +10,7 @@ El objetivo ha sido probar distintas dependencias, incorporar una escena 3D y ap
 
 He instalado la dependencia `react-confetti` y he añadido un componente de confeti a la aplicación.
 
-![Captura React Confetti](capturas/react-confetti.png)
+![Captura React Confetti](/capturas/react-confetty.png)
 
 ## 2. Canvas Confetti
 
